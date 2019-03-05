@@ -1,0 +1,104 @@
+$aliceblue: #f0f8ff;
+$light-mint: #c6ebde;
+$bold-mint: #3caa83;
+$bold-bold-mint:#2e8465;
+$white:#ffffff;
+$milk-white:#f8f9fa;
+$black:#000000;
+$light-black:rgba(0,0,0,0.9);
+$blue-35:#0056b3;
+
+
+$fixedPositon: absolute;
+$text-align-center: center;
+
+
+.header-page{
+    // position: fixed;
+    width: 100%;
+    background-image: url('img/design-back-img2.png');
+    background-repeat: repeat;
+    
+    .text-align-center{
+        text-align: $text-align-center !important;
+    }
+    .navbar{
+        // navbar-expand-md navbar-light bg-white absolute-top
+        
+
+        //dropdown Menu
+        .drpItem{
+            color:$bold-bold-mint;
+        }
+        .drpItem:hover , .drpItem:active{
+            background-color: $bold-mint;
+            color: $white !important;
+        }
+
+        //search input
+        .form-focus-color:focus{
+            border-color:$bold-bold-mint;
+            box-shadow: 0 0 0 0.2rem $light-mint;
+        }
+        //search btn
+        .btn-lightmint{
+            border-color:  $bold-bold-mint;
+            color: $bold-bold-mint;
+        }
+        .btn-lightmint:hover, .btn-lightmint:active{
+            background-color: $bold-mint;
+            border-color: $bold-bold-mint !important;
+            color:$white;
+        
+        }
+        .btn-lightmint:focus{
+            box-shadow: 0 0 0 0.2rem $light-mint !important;
+        }
+
+        //language selection
+        .drpLanguage{
+            // border: none !important;
+            background-color:$milk-white !important;
+        }
+        .drpLanguage:focus{
+            border-color:$bold-bold-mint !important;
+            box-shadow: 0 0 0 0.2rem $light-mint !important;
+            background-color:$milk-white !important;
+        }
+        .drpLanguage>.drpItem{
+            color: $bold-bold-mint;
+        }
+    }
+
+}
+
+body {
+    background: $aliceblue;
+    a{
+        color: $bold-bold-mint;
+
+    }
+    .container {
+        border-top: solid 5px #e2e7ec;
+        // border: 1px solid #dbe0e8;
+
+        .main-content {
+            // margin-top: 20px;
+            overflow-y: auto;
+            background: $light-mint;
+
+       }
+       .col-left{
+           margin-top: 20px;
+
+           .bordershadow:hover{
+                box-shadow: 
+                            0 8px 16px 0 rgba(0,0,0,0.2), 
+                            0 6px 20px 0 rgba(0,0,0,0.19);
+           }
+       }
+       .col-right{
+           margin-top: 20px;
+       }
+   }
+}
